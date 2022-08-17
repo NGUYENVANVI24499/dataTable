@@ -2,7 +2,7 @@ import React from 'react'
 
 const data1 = () => {
   return (
-    <div>data1</div>
+    <div>datacuar main</div>
   )
 }
 
