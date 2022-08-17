@@ -5,6 +5,7 @@ const data1 = () => {
   <>
     <div>datacuar main</div>
     <div>thataj </div>
+    <div>ddf</div>
   </>
   )
 }
