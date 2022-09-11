@@ -16,8 +16,6 @@ const initialvalue = {
   ],
 };
 const DataTable = () => {
-
-  console.log('render')
   const [values, setValue] = useState(initialvalue);
   const [errors, setErrors] = useState({});
   const [error1, setErrors1] = useState({});
@@ -75,12 +73,12 @@ const DataTable = () => {
     validate1(temp);
   };
   const handleSubmit = () => {
-    if (validate()) {
-      if (validate1()) {
-        console.log(values)
-      }
+    let ischeck = [validate(), validate1()];
+    let checked = ischeck.every((x) => x == true);
+    if (checked) {
+      console.log(values);
     } else {
-      alert('vui lòng nhập đầy đủ thông tin')
+      console.log("vui lòng nhập đầy đủ thông tin");
     }
   };
   return (
